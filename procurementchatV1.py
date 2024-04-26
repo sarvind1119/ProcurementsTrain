@@ -96,9 +96,9 @@ def user_input(user_question):
     st.write("Reply: ", response_text)
 
 def main():
-    st.set_page_config(page_title="Procurement of goods, works and consultancy services assistant",
-                       page_icon=":books:")
-    st.header("Procurement Rules GPT")
+    st.set_page_config(page_title="Procurement of goods, works and consultancy services assistant"
+                       ")
+    st.header("National Guidelines and Implementation Framework on Equitable and Inclusive Education (NCIFEIE) GPT",page_icon=":books:)
     
     # Define the URL of the PDF file
     pdf_urls = ["https://dsel.education.gov.in/sites/default/files/guidelines/NGIFEIE_dosel.pdf"]
@@ -113,9 +113,7 @@ def main():
         user_input(user_question)
 
     st.sidebar.markdown("""
-        This custom GPT, named Procurement Rules Assistant, is designed to analyze and interpret procurement-related documents and rules, focusing on the documents provided. It concentrates on identifying key information, summarizing guidelines, and highlighting deviations from standard procurement practices outlined in the available manuals for the procurement of works, goods, and consultancy services.
-
-        Currently it contains only the document linked from the provided URL. This document contains instructions for the preparation of detailed estimates of expenditure from the Consolidated Fund of India. It provides guidance on various aspects of budgeting, including the preparation of estimates, classification of accounts, and submission of reports. The document also includes forms for recording and reporting financial transactions, such as the Liability Register and the Statement of Liabilities.
+        This custom GPT, named NCIFEIE helps you to answer your queries about the National Guidelines and Implementation Framework on Equitable and Inclusive Education. 
 
         Procurement Rules documents will be uploaded soon.... 
     """)
