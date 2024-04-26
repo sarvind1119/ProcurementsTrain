@@ -95,11 +95,13 @@ def main():
     st.sidebar.markdown("""
         This custom GPT, named Procurement Rules Assistant, is designed to analyze and interpret procurement-related documents and rules, focusing on the documents provided. It concentrates on identifying key information, summarizing guidelines, and highlighting deviations from standard procurement practices outlined in the available manuals for the procurement of works, goods, and consultancy services.
 
-Currently it contains only "Compilation of amendments in GFRs, 2017 upto 31.07.2023_1.pdf" 
-This document contains instructions for the preparation of detailed estimates of expenditure from the Consolidated Fund of India. It provides guidance on various aspects of budgeting, including the preparation of estimates, classification of accounts, and submission of reports. The document also includes forms for recording and reporting financial transactions, such as the Liability Register and the Statement of Liabilities.
-   
-                        
-                        Procurement Rules documents will be uploaded soon.... """)
+Main Functions:
+
+Document Analysis: Reads and extracts important information from procurement manuals, such as the "Manual for Procurement of Works," "Procurement Manual of Goods," and the "Manual for Procurement of Consultancy & Other Services."
+Rule Interpretation: Interprets procurement rules from these documents, ensuring that procurement practices align with the guidelines and regulations provided in these resources.
+Deviation Identification: Identifies deviations from standard procedures in tender documents or proposals, assisting in compliance and risk mitigation associated with non-adherence to established norms.
+This setup is tailored to assist in managing and overseeing procurement processes within organizations, ensuring adherence to financial propriety, efficient resource use, and transparency.
+    """)
     if user_question:
         user_input(user_question)
 
