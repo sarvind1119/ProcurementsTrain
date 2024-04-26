@@ -92,13 +92,12 @@ def user_input(user_question):
         , return_only_outputs=True)
 
     # Printing response and providing a link to the documents in bold
-    response_text = f"{response['output_text']}\n\n**In order to download the relevant documents please visit: [Download Documents](https://shorturl.at/dDZ14)**"
+    response_text = f"{response['output_text']}\n\n**In order to download the relevant documents please visit: [Download Documents](https://dsel.education.gov.in/sites/default/files/guidelines/NGIFEIE_dosel.pdf)**"
     st.write("Reply: ", response_text)
 
 def main():
-    st.set_page_config(page_title="Procurement of goods, works and consultancy services assistant"
-                       ")
-    st.header("National Guidelines and Implementation Framework on Equitable and Inclusive Education (NCIFEIE) GPT",page_icon=":books:)
+    st.set_page_config(page_title="Procurement of goods, works and consultancy services assistant")
+    st.header("National Guidelines and Implementation Framework on Equitable and Inclusive Education (NCIFEIE) GPT")
     
     # Define the URL of the PDF file
     pdf_urls = ["https://dsel.education.gov.in/sites/default/files/guidelines/NGIFEIE_dosel.pdf"]
