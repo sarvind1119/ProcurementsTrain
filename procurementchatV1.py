@@ -17,10 +17,16 @@ os.getenv("GOOGLE_API_KEY")
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 # Predefined PDF files (assume they are stored in a directory accessible by the script)
-pdf_files = ["C:/Users/HP/Downloads/procurement/Manual for Procurement of Consultancy & Other Services_0.pdf",
-            "C:/Users/HP/Downloads/procurement/Manual for Procurement of Works_0.pdf",
-            "C:/Users/HP/Downloads/procurement/Procurement Manual of Goods.pdf",
-            "C:/Users/HP/Downloads/procurement/Compilation of amendments in GFRs, 2017 upto 31.07.2023_1.pdf"]
+# pdf_files = [Manual for Procurement of Consultancy & Other Services_0.pdf",
+#             Manual for Procurement of Works_0.pdf",
+#             Procurement Manual of Goods.pdf",
+#             Compilation of amendments in GFRs, 2017 upto 31.07.2023_1.pdf"]
+
+
+pdf_files = ["Manual for Procurement of Consultancy & Other Services_0.pdf",
+            "Manual for Procurement of Works_0.pdf",
+            "Procurement Manual of Goods.pdf",
+            "Compilation of amendments in GFRs, 2017 upto 31.07.2023_1.pdf"]
 
 def get_pdf_text(pdf_files):
     text = ""
