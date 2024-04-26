@@ -1,5 +1,8 @@
-streamlit==1.8.0
-PyPDF2==2.1.0
-google-generativeai==0.1.0  # This is a placeholder; replace with the actual version if available
-langchain==0.1.0  # This is a placeholder; replace with the actual version if available
-python-dotenv==0.19.1
+streamlit
+google-generativeai
+python-dotenv
+langchain
+PyPDF2
+chromadb
+faiss-cpu
+langchain_google_genai
