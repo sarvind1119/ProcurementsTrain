@@ -25,8 +25,6 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 pdf_files = ["Compilation of amendments in GFRs, 2017 upto 31.07.2023_1.pdf"]
 
-#pdf_files = ['Arvind Task Summary December to March.pdf']
-
 def get_pdf_text(pdf_files):
     text = ""
     for pdf_path in pdf_files:
