@@ -13,6 +13,7 @@ from dotenv import load_dotenv
 import requests
 from PyPDF2 import PdfReader
 import io
+from langchain_community.vectorstores import FAISS
 
 def get_pdf_text_from_url(pdf_urls):
     text = ""
@@ -82,7 +83,7 @@ Answer:
 
 def user_input(user_question):
     embeddings = GoogleGenerativeAIEmbeddings(model = "models/embedding-001")
-    new_db = FAISS.load_local("faiss_index", embeddings)
+    new_db = FAISS.load_local("faiss_index", embeddings,allow_dangerous_deserialization=True)
     docs = new_db.similarity_search(user_question)
 
     chain = get_conversational_chain()
